@@ -14,23 +14,10 @@ def main():
     transactions = pd.concat([df1, df2,], axis=0, ignore_index=True)
     print("The dataset has been loaded succesfully\n")
 
-     # Check for the dataset
-    # Display all columns
-    pd.set_option('display.max_columns', None)
-    
-    print("Printing the first 10 rows\n")
-    print(transactions.head(11))
-    
-    # Reset the display settings
-    pd.reset_option('display.max_columns')
-
-    # Check for data types
-    print("The dataset has the following data types:\n")
-    transactions.info()
-    
-    # Check for missing values
-    print("Checking for missing values\n")
-    print(transactions.isna().sum())
+    # Drop duplicates
+    duplicates = transactions.duplicated().sum()
+    print("Duplicates have been removed\n")
+    print(f"{duplicates} were removed\n")
 
 
 if __name__ == "__main__":
