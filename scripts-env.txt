@@ -1,0 +1,11 @@
+# Crear un ambiente 
+python -m venv nombre-del-ambiente -> python -m venv data-science-env
+
+# Si da error de activacion por politica, ejecutar en terminal
+Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
+
+# Activar el entorno virtual 
+.\nombre-del-ambiente\Scripts\Activate -> .\data-science-env\Scripts\Activate
+
+# Desactivar el ambiente
+deactivate

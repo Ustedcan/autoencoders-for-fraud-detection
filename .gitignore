@@ -1,0 +1,22 @@
+# Archivos y directorios de Python
+__pycache__/
+*.pyc
+*.pyo
+venv/
+data-science-env/
+
+# Archivos de configuración local
+.env
+.DS_Store
+
+# Archivos generados por editores
+.vscode/
+.idea/
+
+# Archivos de log
+*.log
+*.bak
+
+# Archivos csv
+*.csv
+data/raw/transacciones.csv  
