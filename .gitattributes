@@ -1,2 +1,0 @@
-data/raw/transacciones.csv filter=lfs diff=lfs merge=lfs -text
-data/raw/transaciones.csv filter=lfs diff=lfs merge=lfs -text
