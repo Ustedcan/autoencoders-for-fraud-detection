@@ -3,7 +3,7 @@ __pycache__/
 *.pyc
 *.pyo
 venv/
-data-science-env/
+/data-science-env/
 
 # Archivos de configuración local
 .env
@@ -19,4 +19,4 @@ data-science-env/
 
 # Archivos csv
 *.csv
-data/raw/transacciones.csv  
+
