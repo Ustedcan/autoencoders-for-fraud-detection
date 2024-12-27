@@ -7,8 +7,22 @@ import numpy as np
 def main():
 
     # Load data
-    transactions = pd.read_csv("../data/raw/transacciones.csv")
+    df1 = pd.read_csv("../data/raw/transacciones-1.csv")
+    df2 = pd.read_csv("../data/raw/transacciones-2.csv")
+
+    # Concatenate the dataframes
+    transactions = pd.concat([df1, df2,], axis=0, ignore_index=True)
     print("The dataset has been loaded succesfully\n")
+
+     # Check for the dataset
+    # Display all columns
+    pd.set_option('display.max_columns', None)
+    
+    print("Printing the first 10 rows\n")
+    print(transactions.head(11))
+    
+    # Reset the display settings
+    pd.reset_option('display.max_columns')
 
     # Check for data types
     print("The dataset has the following data types:\n")
@@ -18,15 +32,6 @@ def main():
     print("Checking for missing values\n")
     print(transactions.isna().sum())
 
-    # Check for the dataset
-    # Display all columns
-    pd.set_option('display.max_columns', None)
-    
-    print("Printing the first 10 rows\n")
-    print(transactions.head(11))
-    
-    # Reset the display settings
-    pd.reset_option('display.max_columns')
 
 if __name__ == "__main__":
     main()
