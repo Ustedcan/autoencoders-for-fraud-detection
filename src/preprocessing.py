@@ -1,4 +1,4 @@
-# Importar librerías
+# Import the required libraries
 import pandas as pd
 import numpy as np
 from utils import concatenate
