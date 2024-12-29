@@ -2,14 +2,16 @@
 __pycache__/
 *.pyc
 *.pyo
+*.pyd
 venv/
-/data-science-env/
+data-science-env/
+env/
 
 # Archivos de configuración local
 .env
 .DS_Store
 
-# Archivos generados por editores
+# Archivos de editores
 .vscode/
 .idea/
 
@@ -17,6 +19,5 @@ venv/
 *.log
 *.bak
 
-# Archivos csv
+# Archivos de datos
 *.csv
-
